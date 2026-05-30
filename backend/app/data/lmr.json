@@ -1,0 +1,141 @@
+{
+  "version": "1.0",
+  "fuente": "Codex Alimentarius + SENASAG Bolivia 2024",
+  "insumos": [
+    {
+      "nombre_comercial": "Decis",
+      "principio_activo": "Deltametrina",
+      "grupo_quimico": "Piretroide",
+      "cultivos": [
+        {"cultivo": "tomate",   "lmr_mg_kg": 0.2,  "periodo_carencia_dias": 3,  "dosis_maxima": 0.5,  "unidad_dosis": "l/ha",  "fuente": "codex"},
+        {"cultivo": "pimiento", "lmr_mg_kg": 0.2,  "periodo_carencia_dias": 3,  "dosis_maxima": 0.5,  "unidad_dosis": "l/ha",  "fuente": "codex"},
+        {"cultivo": "pepino",   "lmr_mg_kg": 0.1,  "periodo_carencia_dias": 3,  "dosis_maxima": 0.5,  "unidad_dosis": "l/ha",  "fuente": "codex"},
+        {"cultivo": "cebolla",  "lmr_mg_kg": 0.1,  "periodo_carencia_dias": 7,  "dosis_maxima": 0.5,  "unidad_dosis": "l/ha",  "fuente": "codex"},
+        {"cultivo": "maiz",     "lmr_mg_kg": 0.02, "periodo_carencia_dias": 14, "dosis_maxima": 0.5,  "unidad_dosis": "l/ha",  "fuente": "codex"},
+        {"cultivo": "arroz",    "lmr_mg_kg": 0.05, "periodo_carencia_dias": 14, "dosis_maxima": 0.5,  "unidad_dosis": "l/ha",  "fuente": "codex"}
+      ]
+    },
+    {
+      "nombre_comercial": "Lorsban",
+      "principio_activo": "Clorpirifos",
+      "grupo_quimico": "Organofosforado",
+      "cultivos": [
+        {"cultivo": "tomate", "lmr_mg_kg": 0.5,  "periodo_carencia_dias": 21, "dosis_maxima": 1.5, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "papa",   "lmr_mg_kg": 0.05, "periodo_carencia_dias": 21, "dosis_maxima": 1.5, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "maiz",   "lmr_mg_kg": 0.05, "periodo_carencia_dias": 21, "dosis_maxima": 1.5, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "soja",   "lmr_mg_kg": 0.05, "periodo_carencia_dias": 30, "dosis_maxima": 1.5, "unidad_dosis": "l/ha", "fuente": "codex"}
+      ]
+    },
+    {
+      "nombre_comercial": "Roundup",
+      "principio_activo": "Glifosato",
+      "grupo_quimico": "Fosfonato",
+      "cultivos": [
+        {"cultivo": "soja",  "lmr_mg_kg": 20.0, "periodo_carencia_dias": 60, "dosis_maxima": 3.0, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "maiz",  "lmr_mg_kg": 1.0,  "periodo_carencia_dias": 60, "dosis_maxima": 3.0, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "arroz", "lmr_mg_kg": 0.1,  "periodo_carencia_dias": 30, "dosis_maxima": 3.0, "unidad_dosis": "l/ha", "fuente": "codex"}
+      ]
+    },
+    {
+      "nombre_comercial": "Gramoxone",
+      "principio_activo": "Paraquat",
+      "grupo_quimico": "Bipiridilio",
+      "cultivos": [
+        {"cultivo": "soja",  "lmr_mg_kg": 0.05, "periodo_carencia_dias": 30, "dosis_maxima": 2.0, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "maiz",  "lmr_mg_kg": 0.05, "periodo_carencia_dias": 30, "dosis_maxima": 2.0, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "arroz", "lmr_mg_kg": 0.05, "periodo_carencia_dias": 30, "dosis_maxima": 2.0, "unidad_dosis": "l/ha", "fuente": "codex"}
+      ]
+    },
+    {
+      "nombre_comercial": "Curacron",
+      "principio_activo": "Profenofos",
+      "grupo_quimico": "Organofosforado",
+      "cultivos": [
+        {"cultivo": "tomate",  "lmr_mg_kg": 0.5, "periodo_carencia_dias": 7, "dosis_maxima": 1.0, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "pimiento","lmr_mg_kg": 0.5, "periodo_carencia_dias": 7, "dosis_maxima": 1.0, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "cebolla", "lmr_mg_kg": 0.5, "periodo_carencia_dias": 7, "dosis_maxima": 1.0, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "pepino",  "lmr_mg_kg": 0.5, "periodo_carencia_dias": 7, "dosis_maxima": 1.0, "unidad_dosis": "l/ha", "fuente": "codex"}
+      ]
+    },
+    {
+      "nombre_comercial": "Karate",
+      "principio_activo": "Lambda-cialotrina",
+      "grupo_quimico": "Piretroide",
+      "cultivos": [
+        {"cultivo": "tomate",  "lmr_mg_kg": 0.2,  "periodo_carencia_dias": 7,  "dosis_maxima": 0.15, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "pimiento","lmr_mg_kg": 0.2,  "periodo_carencia_dias": 7,  "dosis_maxima": 0.15, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "soja",    "lmr_mg_kg": 0.05, "periodo_carencia_dias": 21, "dosis_maxima": 0.15, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "maiz",    "lmr_mg_kg": 0.05, "periodo_carencia_dias": 14, "dosis_maxima": 0.15, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "papa",    "lmr_mg_kg": 0.1,  "periodo_carencia_dias": 7,  "dosis_maxima": 0.15, "unidad_dosis": "l/ha", "fuente": "codex"}
+      ]
+    },
+    {
+      "nombre_comercial": "Bavistin",
+      "principio_activo": "Carbendazim",
+      "grupo_quimico": "Benzimidazol",
+      "cultivos": [
+        {"cultivo": "tomate",    "lmr_mg_kg": 0.2, "periodo_carencia_dias": 7,  "dosis_maxima": 0.5, "unidad_dosis": "kg/ha", "fuente": "codex"},
+        {"cultivo": "papa",      "lmr_mg_kg": 0.1, "periodo_carencia_dias": 7,  "dosis_maxima": 0.5, "unidad_dosis": "kg/ha", "fuente": "codex"},
+        {"cultivo": "zanahoria", "lmr_mg_kg": 0.1, "periodo_carencia_dias": 7,  "dosis_maxima": 0.5, "unidad_dosis": "kg/ha", "fuente": "codex"},
+        {"cultivo": "soja",      "lmr_mg_kg": 0.1, "periodo_carencia_dias": 14, "dosis_maxima": 0.5, "unidad_dosis": "kg/ha", "fuente": "codex"}
+      ]
+    },
+    {
+      "nombre_comercial": "Mancozeb",
+      "principio_activo": "Mancozeb",
+      "grupo_quimico": "Ditiocarbamato",
+      "cultivos": [
+        {"cultivo": "tomate",    "lmr_mg_kg": 5.0, "periodo_carencia_dias": 3, "dosis_maxima": 2.5, "unidad_dosis": "kg/ha", "fuente": "codex"},
+        {"cultivo": "papa",      "lmr_mg_kg": 0.1, "periodo_carencia_dias": 7, "dosis_maxima": 2.5, "unidad_dosis": "kg/ha", "fuente": "codex"},
+        {"cultivo": "cebolla",   "lmr_mg_kg": 0.5, "periodo_carencia_dias": 7, "dosis_maxima": 2.5, "unidad_dosis": "kg/ha", "fuente": "codex"},
+        {"cultivo": "zanahoria", "lmr_mg_kg": 0.5, "periodo_carencia_dias": 7, "dosis_maxima": 2.5, "unidad_dosis": "kg/ha", "fuente": "codex"},
+        {"cultivo": "pepino",    "lmr_mg_kg": 1.0, "periodo_carencia_dias": 3, "dosis_maxima": 2.5, "unidad_dosis": "kg/ha", "fuente": "codex"}
+      ]
+    },
+    {
+      "nombre_comercial": "Score",
+      "principio_activo": "Difenoconazol",
+      "grupo_quimico": "Triazol",
+      "cultivos": [
+        {"cultivo": "tomate",    "lmr_mg_kg": 0.6,  "periodo_carencia_dias": 3,  "dosis_maxima": 0.5, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "cebolla",   "lmr_mg_kg": 0.1,  "periodo_carencia_dias": 7,  "dosis_maxima": 0.5, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "zanahoria", "lmr_mg_kg": 0.1,  "periodo_carencia_dias": 7,  "dosis_maxima": 0.5, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "papa",      "lmr_mg_kg": 0.1,  "periodo_carencia_dias": 7,  "dosis_maxima": 0.5, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "soja",      "lmr_mg_kg": 0.05, "periodo_carencia_dias": 14, "dosis_maxima": 0.5, "unidad_dosis": "l/ha", "fuente": "codex"}
+      ]
+    },
+    {
+      "nombre_comercial": "Vertimec",
+      "principio_activo": "Abamectina",
+      "grupo_quimico": "Avermectina",
+      "cultivos": [
+        {"cultivo": "tomate",  "lmr_mg_kg": 0.05, "periodo_carencia_dias": 3, "dosis_maxima": 0.5, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "pimiento","lmr_mg_kg": 0.05, "periodo_carencia_dias": 3, "dosis_maxima": 0.5, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "pepino",  "lmr_mg_kg": 0.02, "periodo_carencia_dias": 3, "dosis_maxima": 0.5, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "cebolla", "lmr_mg_kg": 0.01, "periodo_carencia_dias": 7, "dosis_maxima": 0.5, "unidad_dosis": "l/ha", "fuente": "codex"}
+      ]
+    },
+    {
+      "nombre_comercial": "Cipermex",
+      "principio_activo": "Cipermetrina",
+      "grupo_quimico": "Piretroide",
+      "cultivos": [
+        {"cultivo": "tomate",   "lmr_mg_kg": 0.5,  "periodo_carencia_dias": 7,  "dosis_maxima": 0.1, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "pimiento", "lmr_mg_kg": 0.5,  "periodo_carencia_dias": 7,  "dosis_maxima": 0.1, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "repollo",  "lmr_mg_kg": 0.1,  "periodo_carencia_dias": 14, "dosis_maxima": 0.1, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "soja",     "lmr_mg_kg": 0.05, "periodo_carencia_dias": 21, "dosis_maxima": 0.1, "unidad_dosis": "l/ha", "fuente": "codex"}
+      ]
+    },
+    {
+      "nombre_comercial": "Confidor",
+      "principio_activo": "Imidacloprid",
+      "grupo_quimico": "Neonicotinoide",
+      "cultivos": [
+        {"cultivo": "tomate",   "lmr_mg_kg": 0.5, "periodo_carencia_dias": 14, "dosis_maxima": 0.5, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "pimiento", "lmr_mg_kg": 0.5, "periodo_carencia_dias": 14, "dosis_maxima": 0.5, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "papa",     "lmr_mg_kg": 0.5, "periodo_carencia_dias": 14, "dosis_maxima": 0.5, "unidad_dosis": "l/ha", "fuente": "codex"},
+        {"cultivo": "soja",     "lmr_mg_kg": 0.1, "periodo_carencia_dias": 21, "dosis_maxima": 0.5, "unidad_dosis": "l/ha", "fuente": "codex"}
+      ]
+    }
+  ]
+}
