@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.database import create_tables
-from app.routers import lotes, cooperativas, alertas, asistente
+from app.routers import lotes, cooperativas, alertas, asistente, voz
 from app.routers import reportes
 
 # Also include the existing flat endpoints for backwards compatibility
@@ -78,6 +78,7 @@ app.include_router(lotes.router)
 app.include_router(cooperativas.router)
 app.include_router(alertas.router)
 app.include_router(asistente.router)
+app.include_router(voz.router)
 app.include_router(reportes.router, prefix="/reportes", tags=["reportes"])
 
 # Análisis preview (no persiste en DB)
