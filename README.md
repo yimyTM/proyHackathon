@@ -1,3 +1,11 @@
+# HAKATHON
+
+LINK DRIVE: https://drive.google.com/drive/folders/1KbCo2cBbOK5ACADgrj5sJD4-_6dR9j40?usp=drive_link
+
+VIDEO: https://youtu.be/U7JuauzJ6oA
+
+# HACKATHON
+
 # 🌿 TrazaTech — Plataforma Inteligente de Trazabilidad Alimentaria
 
 > **TrazaTech** documenta y comunica la historia de cada lote agrícola para demostrar inocuidad en tiempo real.  
@@ -33,18 +41,18 @@ Las cooperativas agrícolas de Santa Cruz enfrentan barreras de acceso a mercado
 
 ### Stack tecnológico
 
-| Tecnología | Versión | Rol |
-|---|---|---|
-| [Next.js](https://nextjs.org/) | 16.x | Framework React con App Router |
-| [React](https://react.dev/) | 19 | Librería UI |
-| [TypeScript](https://www.typescriptlang.org/) | 5.7 | Tipado estático |
-| [Tailwind CSS](https://tailwindcss.com/) | 4.x | Estilos utilitarios |
-| [Radix UI](https://www.radix-ui.com/) | múltiple | Componentes accesibles headless |
-| [Recharts](https://recharts.org/) | 2.x | Gráficas y visualizaciones |
-| [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/) | — | Formularios con validación |
-| [qrcode](https://www.npmjs.com/package/qrcode) | 1.x | Generación de QR en cliente |
-| [date-fns](https://date-fns.org/) | 4.x | Manipulación de fechas |
-| [Lucide React](https://lucide.dev/) | — | Iconos |
+| Tecnología                                                                | Versión  | Rol                             |
+| ------------------------------------------------------------------------- | -------- | ------------------------------- |
+| [Next.js](https://nextjs.org/)                                            | 16.x     | Framework React con App Router  |
+| [React](https://react.dev/)                                               | 19       | Librería UI                     |
+| [TypeScript](https://www.typescriptlang.org/)                             | 5.7      | Tipado estático                 |
+| [Tailwind CSS](https://tailwindcss.com/)                                  | 4.x      | Estilos utilitarios             |
+| [Radix UI](https://www.radix-ui.com/)                                     | múltiple | Componentes accesibles headless |
+| [Recharts](https://recharts.org/)                                         | 2.x      | Gráficas y visualizaciones      |
+| [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/) | —        | Formularios con validación      |
+| [qrcode](https://www.npmjs.com/package/qrcode)                            | 1.x      | Generación de QR en cliente     |
+| [date-fns](https://date-fns.org/)                                         | 4.x      | Manipulación de fechas          |
+| [Lucide React](https://lucide.dev/)                                       | —        | Iconos                          |
 
 ### Estructura de rutas (App Router)
 
@@ -79,36 +87,36 @@ npm run dev          # Servidor en http://localhost:3000
 
 ### Stack tecnológico
 
-| Tecnología | Versión | Rol |
-|---|---|---|
-| [FastAPI](https://fastapi.tiangolo.com/) | ≥0.115 | Framework API asíncrono |
-| [Uvicorn](https://www.uvicorn.org/) | ≥0.32 | Servidor ASGI |
-| [Pydantic](https://docs.pydantic.dev/) | ≥2.10 | Validación de modelos de datos |
-| [SQLAlchemy](https://www.sqlalchemy.org/) | ≥2.0 | ORM (base de datos SQLite) |
-| [Google GenAI SDK](https://pypi.org/project/google-genai/) | ≥2.0 | Integración con modelos de IA |
-| [qrcode + Pillow](https://pypi.org/project/qrcode/) | ≥8.0 / ≥11.0 | Generación de imágenes QR |
-| [httpx](https://www.python-httpx.org/) | ≥0.28 | Cliente HTTP async (Telegram, FCM) |
-| [python-dotenv](https://pypi.org/project/python-dotenv/) | ≥1.0 | Variables de entorno |
-| [pytest](https://pytest.org/) | ≥8.0 | Testing |
+| Tecnología                                                 | Versión      | Rol                                |
+| ---------------------------------------------------------- | ------------ | ---------------------------------- |
+| [FastAPI](https://fastapi.tiangolo.com/)                   | ≥0.115       | Framework API asíncrono            |
+| [Uvicorn](https://www.uvicorn.org/)                        | ≥0.32        | Servidor ASGI                      |
+| [Pydantic](https://docs.pydantic.dev/)                     | ≥2.10        | Validación de modelos de datos     |
+| [SQLAlchemy](https://www.sqlalchemy.org/)                  | ≥2.0         | ORM (base de datos SQLite)         |
+| [Google GenAI SDK](https://pypi.org/project/google-genai/) | ≥2.0         | Integración con modelos de IA      |
+| [qrcode + Pillow](https://pypi.org/project/qrcode/)        | ≥8.0 / ≥11.0 | Generación de imágenes QR          |
+| [httpx](https://www.python-httpx.org/)                     | ≥0.28        | Cliente HTTP async (Telegram, FCM) |
+| [python-dotenv](https://pypi.org/project/python-dotenv/)   | ≥1.0         | Variables de entorno               |
+| [pytest](https://pytest.org/)                              | ≥8.0         | Testing                            |
 
 ### Módulos principales
 
-| Archivo | Descripción |
-|---|---|
-| [`main.py`](./backend/main.py) | Punto de entrada FastAPI. Expone los endpoints REST y configura CORS. |
-| [`engine.py`](./backend/engine.py) | Motor de análisis fitosanitario. Aplica 6 reglas de negocio para determinar `APTO / ATENCIÓN / NO_APTO`. |
-| [`models.py`](./backend/models.py) | Modelos Pydantic: `AnalisisRequest`, `AnalisisResponse`, `InsumoRequest`, `AlertaVecinaRequest`. |
-| [`periodos_carencia.py`](./backend/periodos_carencia.py) | Base de conocimiento de agroquímicos: período de carencia, dosis máxima, autorización. |
-| [`alertas.py`](./backend/alertas.py) | Envío de notificaciones por Telegram Bot API y Firebase Cloud Messaging (FCM). |
-| [`qr_generator.py`](./backend/qr_generator.py) | Genera imagen PNG de QR con el resumen del análisis del lote. |
+| Archivo                                                  | Descripción                                                                                              |
+| -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| [`main.py`](./backend/main.py)                           | Punto de entrada FastAPI. Expone los endpoints REST y configura CORS.                                    |
+| [`engine.py`](./backend/engine.py)                       | Motor de análisis fitosanitario. Aplica 6 reglas de negocio para determinar `APTO / ATENCIÓN / NO_APTO`. |
+| [`models.py`](./backend/models.py)                       | Modelos Pydantic: `AnalisisRequest`, `AnalisisResponse`, `InsumoRequest`, `AlertaVecinaRequest`.         |
+| [`periodos_carencia.py`](./backend/periodos_carencia.py) | Base de conocimiento de agroquímicos: período de carencia, dosis máxima, autorización.                   |
+| [`alertas.py`](./backend/alertas.py)                     | Envío de notificaciones por Telegram Bot API y Firebase Cloud Messaging (FCM).                           |
+| [`qr_generator.py`](./backend/qr_generator.py)           | Genera imagen PNG de QR con el resumen del análisis del lote.                                            |
 
 ### Endpoints REST
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `POST` | `/analizar` | Analiza un lote y devuelve estado, alerta, motivos y confianza en JSON. |
-| `POST` | `/analizar/qr` | Igual que `/analizar` pero devuelve el QR como imagen `image/png`. |
-| `GET` | `/health` | Verificación de salud del servicio. |
+| Método | Ruta           | Descripción                                                             |
+| ------ | -------------- | ----------------------------------------------------------------------- |
+| `POST` | `/analizar`    | Analiza un lote y devuelve estado, alerta, motivos y confianza en JSON. |
+| `POST` | `/analizar/qr` | Igual que `/analizar` pero devuelve el QR como imagen `image/png`.      |
+| `GET`  | `/health`      | Verificación de salud del servicio.                                     |
 
 ### Lógica del motor (engine.py)
 
@@ -198,4 +206,4 @@ proyHackathon/
 
 ---
 
-*Desarrollado para conectar cooperativas agrícolas de Santa Cruz con mercados formales — Bolivia 🇧🇴*
+_Desarrollado para conectar cooperativas agrícolas de Santa Cruz con mercados formales — Bolivia 🇧🇴_
